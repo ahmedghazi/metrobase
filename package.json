@@ -9,7 +9,8 @@
     "test": "NODE_ENV=test mocha --recursive test",
     "test:coverage": "nyc npm test",
     "test:unit": "mocha --recursive test/middleware test/models test/routes",
-    "test:integration": "mocha --recursive test/integration"
+    "test:integration": "mocha --recursive test/integration",
+    "dploy": "git add -A && git commit -m 'dploy' && git push origin dev"
   },
   "dependencies": {
     "body-parser": "^1.13.3",
