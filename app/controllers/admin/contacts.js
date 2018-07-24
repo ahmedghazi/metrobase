@@ -127,15 +127,20 @@ router.get('/new', function (req, res, next) {
 router.post('/new', function (req, res, next) {
     //console.log(req.body)
     //req.body.slug = slug(req.body.title);
-    
-    var post = new Contacts(req.body);
-    post.save(function(err) {
-        if (err) {
-            return res.send(err);
-        }
+    //return res.json(req.body);
 
-        res.redirect('/admin/contacts/');
+    var query = {email: req.body.email}
+    var update = req.body
+    update.metiers = [req.body.metier[0], req.body.metier[1]]
+    //console.log(update)
+    Contacts.findOneAndUpdate(query, update, {
+        upsert: true, new: true
+    }, function(err, contact, raw) {
+        console.log(contact.lastname)
+        //callback()
+        res.redirect('/admin/contacts/edit/'+contact._id);
     });
+
 });
 
 router.get('/edit/:id', function (req, res, next) {

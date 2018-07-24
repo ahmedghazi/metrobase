@@ -49,16 +49,19 @@ prepend content
 					+inputText('text','country','')
 
 			.row
-				.col-md-4
+				.col-md-6
 					-var metiersList = [];
 					each metier in metiers
 						-metiersList.push({_id:metier._id, title:metier.title})
 					+select('metier', metiersList, '')
-					
-				.col-md-4
-					+inputText('date','date_created','')
+				.col-md-6
+					+select('metier', metiersList, '')
 
-				.col-md-4
+			.row
+				//- .col-md-6
+				//- 	+inputText('date','date_created','')
+
+				.col-md-6
 					+inputRadio('text','client','')
 				
 
