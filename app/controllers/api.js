@@ -3,6 +3,7 @@ var express = require('express'),
     mongoose = require('mongoose'),
     Contacts = mongoose.model('Contacts'),
     Metiers = mongoose.model('Metiers'),
+    Posts = mongoose.model('Posts'),
     //request = require('request'),
     fs = require("fs"),
     parse = require('csv-parse'),
@@ -110,7 +111,7 @@ router.get('/all', function (req, res, next) {
     Contacts
         .find()
         .sort({date_created: 'desc'})
-        .populate({path: 'metiers'})
+        .populate({path: 'metiers comments'})
         .exec(function(err, contacts) {
         //.find(function (err, contacts) {
             if (err) return next(err);
@@ -174,6 +175,30 @@ router.post('/update/metiers/:id', function (req, res, next) {
             success: true,
             metier: metier
         })
+    });
+});
+
+router.post('/comment/:id', function (req, res, next) {
+    const {data} = req.body;
+    //console.log(req.body.data)
+    const comment = new Posts(req.body.data)
+    comment.save(function(_err) {
+        if (_err) {
+            console.log(_err)
+            return res.send(_err);
+        }
+
+        var query = {_id: req.params.id}
+        var update = { $addToSet: {comments: comment } }
+        console.log(update)
+        Contacts.findOneAndUpdate(query, update, {
+            upsert: true, new: true
+        }, function(err, contact, raw) {
+            return res.json({
+                success: true,
+                comment: comment
+            })
+        });
     });
 });
 

@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const PostsSchema = new Schema({
-  titre: String,
+  title: String,
   texte: String
 },{
     timestamps: true
