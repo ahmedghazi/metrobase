@@ -43,6 +43,12 @@ module.exports = (app, config) => {
 
   app.locals.moment = require('moment');
 
+  app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+  });
+  
   var controllers = glob.sync(config.root + '/app/controllers/admin/*.js');
       controllers.forEach((controller) => {
         require(controller)(app);
