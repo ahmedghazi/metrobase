@@ -120,7 +120,7 @@ router.get('/all', function (req, res, next) {
 });
 
 router.post('/update/:id', function (req, res, next) {
-    console.log(req.body.data)
+    //console.log(req.body.data)
     //const {data} = req.body;
     //var query = {_id: data._id}
     
@@ -157,6 +157,22 @@ router.get('/delete/:id', function (req, res, next) {
 
         return res.json({
             success: true
+        })
+    });
+});
+
+router.post('/update/metiers/:id', function (req, res, next) {
+    const {data} = req.body;
+    //console.log(req.body.data)
+
+    var query = {_id: data._id}
+    var update = {title: data.title}
+    Metiers.findOneAndUpdate(query, update, {
+        upsert: true, new: true
+    }, function(err, metier, raw) {
+        return res.json({
+            success: true,
+            metier: metier
         })
     });
 });
