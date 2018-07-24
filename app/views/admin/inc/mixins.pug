@@ -1,0 +1,48 @@
+mixin inputText(type, name, value)
+	div.form-group
+		input(name=name, placeholder=name, type=type, class='form-control' value=value) 
+
+mixin inputTextarea(name, value)
+	div.form-group
+		textarea(placeholder=name, name=name, class='form-control') 
+			if value
+				=value
+			else
+				=name
+				
+mixin inputRadio(type, name, value)
+	div.form-group
+		div(class='radio-label')= name
+		div(class='radio-inline')
+			label
+				input(name=name, type='radio', value='true', checked=value == 'true') 
+				| Oui
+		div(class='radio-inline')
+			label
+				input(name=name, type='radio', value='false' checked=value == 'false')
+				| Non
+
+mixin select(name, options, value)
+	div.form-group
+		select(name=name, class='form-control')
+			option(value=""   )= "Métier"
+			each option in options
+				option(value=option._id, selected=(""+option._id+"" === ""+value._id+"")) #{option.title}
+			
+mixin test(myLabel)
+	div.otherClass
+		div.label= myLabel
+
+mixin list(id, ...items)
+	ul(id=id)
+		each item in items
+			li= item
+
+mixin sortBy(name, slug)
+	div.sortBy
+		span= name+"  "
+			a(href="/admin/contacts/sort/"+slug+"/1") ↑ 
+			a(href="/admin/contacts/sort/"+slug+"/-1") ↓
+
+
+

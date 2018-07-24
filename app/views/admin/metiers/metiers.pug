@@ -1,0 +1,37 @@
+extends ../layout
+
+
+        
+block content
+
+    h2 
+        span #{title} 
+        a(href="/admin/metiers/new" class="btn btn-primary") Ajouter
+    hr
+
+    div.clearfix
+   
+    section
+        //pre #{posts}
+       
+        table.table.table-striped
+            thead
+                tr.panel.panel-default
+                    td
+                        span Name
+                        a(href="/admin/metiers/sort/name/1") ↑ 
+                        a(href="/admin/metiers/sort/name/-1") ↓
+                    
+                    td.text-right Actions
+                    
+            
+            each metier in metiers
+                tr
+                    td #{metier.title}
+                    td.text-right
+                        .btn-group
+                            a(href="/admin/metiers/edit/"+metier._id class="btn btn-primary") Edit
+                            a(href="/admin/metiers/delete/"+metier._id class="btn btn-danger") Delete
+                    
+                    
+        

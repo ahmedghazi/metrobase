@@ -1,0 +1,37 @@
+extends ../layout
+
+    
+prepend content
+    
+    section.edit
+   
+        h2
+            span #{title} 
+            a(href="/c/#{post.category}/#{post.slug}" class="btn btn-primary") Voir
+
+        //pre #{post}
+        form(name="submit", action="/admin/posts/edit/#{post._id}", method="post" )
+
+            div.form-group
+                label(for="name") Titre
+                input(type="text", class="form-control", name="name", placeholder="Titre", value="#{post.name}")
+            
+            
+            hr
+            div.form-group
+                input(type="submit", class="btn btn-lg btn-primary btn-block", value="Update")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

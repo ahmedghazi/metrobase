@@ -1,0 +1,36 @@
+Society;Métier;Métier 2;Nom;Prénom;Adresse mail;Téléphone fixe;Téléphone portable;Titre;Société;Adresse 1;Adresse 2;Code Postal;Ville;Pays;Date ajout;Client Metropolis;Ne pas contacter;Point de contact;A contacter en 2018;Livret;Vœux;Mettre à jour
+Jean-Pierre Lott;Architecte;;LOTT;Jean-Pierre;jean-pierre.lott@jplott.fr;01 44 88 94 95;06 15 01 76 14;Dirigeant;Jean-Pierre Lott Architecte;31 rue Coquillère;;75001;Paris;France;2/23/13;OUI;;;;OUI;OUI;
+Oualalou + Choi architectes;Architecte;;OUALALOU;Tarik;to@kilospace.com;01 53 10 02 99;06 64 30 99 78;Associé;Oualalou + Choi architectes;2 rue de Palestro;;75002;Paris;France;;;OUI;;;;;
+Thalès Architectes;Architecte;;;;strasbourg@thales-architectures.fr ;03 88 19 27 40 ;;;Thalès Architectures;13 rue du château d'angleterre;;BP 50183 - 67304;Strasbourg;France;;;;Identité;OUI;;OUI;
+Haour Architectes;Architecte;;HAOUR;Eric;;01 47 20 22 96;;;Haour architectes;4 avenue du Président Wilson;;75008;Paris;France;;;;identité;OUI;2/19/18;OUI;
+VIB architecture;Architecte;;BALLUS;Bettina;vib@vibarchitecture.com;01 48 00 92 10 ;;;VIB architecture;28, boulevard Poissonnière;;75009;Paris;France;;;;;;5/1/15;;
+Bouygues Immobilier;Maître ouvrage privé;;BERTIERE;François;fbr@bouygues-immobilier.com;01 55 38 27 73;;Président;Bouygues Immobilier;3 boulevard Gallieni;;92445; Issy-Les-Moulineaux Cedex;France;;;;;;;;
+Sem 92;Maître ouvrage public;;BRILLAUD;Antoine;etran@sem92.fr;01 41 37 11 70;;Directeur de la construction ;Sem 92;28 boulevard Emile Zola;;92020;Nanterre Cedex;France;;;;;;;;
+Direction Générale des Patrimoines;Maître ouvrage public;;CANDRE;Manuel;manuel.candre@culture-gouv.fr;01 40 15 85 43 ;06 07 83 15 64;Adjoint au chef du département de la communication;Direction Générale des Patrimoines;182 rue Saint-Honoré;;75033;Paris Cedex 01;France;;;;;;;;
+Catherine Sabbah;Presse FR généraliste;;SABBAH;Catherine;catherinesabbah@gmail.com;;06 37 31 71 80;Journaliste urbaniste;Les Echos;16, rue du 4 septembre;;75002;Paris;France;;;;;;;;
+Richard Scoffier;Presse FR spécialisée;OUI;SCOFFIER;Richard;richard.scoffier@wanadoo.fr;01 40 09 85 35;06 07 73 75 73;Journaliste pigiste;Pigiste;58 boulevard de Charonne;;75020;Paris;France;;;;;;;;
+Bruno Monier-Vinard;Presse FR généraliste;;MONIER-VINARD;Bruno;bmonier-vinard@lepoint.fr;01 44 10 10 10;06 09 13 78 74;Journaliste immobilier architecture urbanisme;Le Point;"Immeuble ""le Barjac""";1 boulevard Victor;75015;Paris;France;;;;;;;;
+Sibylle Vincendon;Presse FR généraliste;;VINCENDON;Sibylle;s.vincendon@liberation.fr;01 42 76 19 15;06 81 82 66 07;Rédactrice en chef adjointe;Libération;11, rue Béranger;;75154;Paris;France;;;;;;;;
+Oliver Wainwright;Presse INTER;;WAINWRIGHT;Oliver;oliver.wainwright@guardian.co.uk;447 775 631 370;;Critique architecture/design;Guardian News;Kings Place 90 York Way;;N1 9GU;London;UK;;;;;;;;
+Alessia Macchiarola;Presse INTER;;MACCHIAROLA;Alessia;web@ottagono.com;+39 339 59 43 274;;Journaliste architecture;Ottagono;;;40128;Bologna;Italie;;;;;;;;OUI
+William Menking;Presse INTER;;MENKING;William;wmenking@archpaper.com;212.966.06.30;;Editor in Chief;The Architects Newspaper;21 murray ST 5th floor;;10007;New York;USA;;;;;;;;
+Vincent Berjot;Institutionnel;;BERJOT;Vincent;vincent.berjot@culture.gouv.fr;01 40 15 80 00;;DIrecteur général des patrimoines;Ministère de la Culture;3 Rue de Valois;;75001;Paris;France;;;;;;;;
+Sarah Douglas;Presse INTER;;DOUGLAS;Sarah;sarah_douglas@wallpaper.com;44(0)20 3148 5000;;Creative director;WALLPAPER*;110 southwark street;;SE1 OSU;London;UK;;;;;;;;
+Cabinet JP Lamoureux;BET;;LAMOUREUX;Jean-Paul;jplamoureux-acoustic@wanadoo.fr;01 45 65 23 64;06 12 46 47 52;Acousticien;Cabinet JP Lamoureux;4 bis rue Simonet;;75013;Paris;France;;;;;;;;
+Concepto;BET;;NARBONI;Roger;concepto.narboni@wanadoo.fr;01 47 35 06 74;01 47 35 32 82;Concepteur lumière/éclairagiste;Concepto;1 rue de l'Egalit;;92220;Bagneux;France;;;;;;;;
+VPEAS;BET;;POURTAU;Vincent;v.pourtau@vpeas.com;09 51 41 98 97;06 84 11 05 50;Economie de la construction;VPEAS;26 rue Beaubourg;;75003;Paris;France;;;;;;;;
+EXYZT;BET;;RIZZOTTI;Philippe;contact@exyzt.org;01 46 07 90 04;06 50 01 72 25;Perspectiviste;EXYZT;4 rue Franaise ;;75001;Paris;France;;;;;;;;
+Benoît Santiard;Graphiste;;SANTIARD;Benoît;benoit@bsantiard.com;09 72 46 58 50;06 32 20 55 56;Graphiste;Buiding Paris;108 boulevard Sebastopol;;75003;Paris;France;;;;;;;;
+Graph Imprim;Graphiste;Imprimeur;SCHNARNITZKY;Muriel;s.muriel@graph-imprim.com;01 49 76 10 83;;Graphiste Imprimeur;Graph Imprim;9-11 rue Sinclair;;94000;Créteil;France;;;;;;;;
+Ingoprint;Graphiste;;GORRI;Javier;javiergorri@ingoprint.com;34 933 459 262;34 696 425 497;Commercial - Imprimeur;Ingoprint;Maracaibo, 15;;08030;Barcelone;Espagne;;;;;;;;
+Schnepp Renou;Photographe;;RENOU;Morgane ;info@schnepp-renou.com;07 68 27 64 60;;Photographe;Schnepp Renou;Bat. A, 6-8 rue marc séguin;;75018;Paris;France;;;;;;;;
+Sergio Grazia;Photographe;;GRAZIA;Sergio;info@sergiograzia.fr;01 73 75 85 62;06 87 07 39 93;Photographe;Sergio Grazia;26, rue de Sambre et Meuse;;75010; Paris;France;;;;;;;;
+Archibooks;Editeur;;SAUTEREAU;Marc;m.sautereau@bookstorming.com;01 42 25 15 58;06 30 80 66 78;Editeur;Archibooks;49 boulevard de la vilette;;75019;Paris;France;;;;;;;;
+Gammon Sharpley;Traducteur;;SHARPLEY;Gammon;gammon.sharpley@gmail.com;;06 61 25 29 60 ;Traducteur;Gammon Sharpley;175, rue de Paris;;93100;Montreuil;France;;;;;;;;
+Ahmed Ghazi;Développeur;;GHAZI;Ahmed;atmet.ghazi@gmail.com;;06 61 49 75 77;Développeur;Ahmed Ghazi;102, rue Doudeauville;;75018;Paris;France;;;;;;;;
+Allo Petit Déjeuner;Traiteur;;CROZEMARIE;Mathias;info@allopetitdejeuner.com;01 47 22 71 98;07 61 53 64 85;Traiteur;Allo Petit Déjeuner;Place Raymond Poincaré;8 rue Berteaux Dumas;92200;Neuilly sur Seine;France;;;;;;;;
+Cars de France;Transports;;;;tiffany@cars-de-france.com;01 77 62 70 05;;Transport - Autocar - capacité 35;Cars de France;23, rue de Richelieu;;75001;Paris;France;;;;;;;;
+Andrew Ayers;Traducteur;Auteur;AYERS;Andrews;andrewjayers@gmail.com;06 84 60 65 90;;Auteur - Traducteur;Andrew Ayers;22, avenue Parmentier;;75011;Paris;France;;;;;;;;
+BNP Paribas Immobilier promotion résidentiel;;;BEAUBOIS;Pascal;;01 55 65 24 24;;Président promotion IDF;BNP Paribas Immobilier promotion résidentiel;167 quai de la Bataille de Stalingrad;;92867;Issy-les-Moulineaux;France;;;;;;;;
+Le Covec Architecte;;;LE COVEC;Jean-Philippe;lecovec.architecte@lecovec.com;01 41 10 40 40 ;;Dirigeant;Le Covec Architecte;38, rue de Silly ;;92100;Boulogne-Billancourt;France;;;;identité+site web;OUI;;OUI;
+Adoma;Maître ouvrage public;;DEMEURE DIT LATTE;Stéphanie;communication@adoma.fr;01 40 61 42 00;;Responsable de la maîtrise d'ouvrage;Adoma;42 rue de Cambronne;;75740;Paris Cedex 15;France;;;;;;;;

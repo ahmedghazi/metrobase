@@ -1,0 +1,17 @@
+extends ../layout
+
+
+	
+prepend content
+
+	section.submit
+		form(name="submit", action="/admin/metiers/edit/"+metier._id, method="POST")
+			
+			h3= title 
+			
+			.row
+				.col-md-6
+					+inputText('text','title',metier.title)
+				.col-md-6
+					.form-group
+						input(type="submit", class="btn btn-primary btn-block", value="Submit")

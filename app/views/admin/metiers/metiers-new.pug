@@ -1,0 +1,26 @@
+extends ../layout
+
+	
+prepend content
+
+	section.submit
+		//pre #{user}
+		h3= title 
+		
+		form(name="submit", action="/admin/metiers/new/", method="POST")
+			include ../inc/mixins
+
+			.row
+				.col-md-6
+					+inputText('text','title','')
+				.col-md-6
+					div.form-group
+						input(type="submit", class="btn btn-primary btn-block", value="Submit")
+				
+				
+
+				
+			
+		
+		
+			

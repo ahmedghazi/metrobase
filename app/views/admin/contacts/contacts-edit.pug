@@ -1,0 +1,76 @@
+extends ../layout
+
+
+	
+prepend content
+
+	section.submit
+		pre #{contact}
+		
+		form(name="submit", action="/admin/contacts/edit/"+contact._id, method="POST")
+			
+			h3= title 
+		
+			
+			.row
+				.col-md-4
+					+inputText('text','society', contact.society)
+
+				.col-md-4
+					+inputText('text','firstname', contact.firstname)
+
+				.col-md-4
+					+inputText('text','lastname', contact.lastname)
+
+			.row
+				.col-md-4
+					+inputText('email','email', contact.email)
+
+				.col-md-4
+					+inputText('text','fix', contact.fix)
+
+				.col-md-4
+					+inputText('text','mobile', contact.mobile)
+				
+			.row
+				.col-md-4
+					+inputText('text','fonction', contact.fonction)
+				.col-md-4
+					+inputTextarea('addresse_1', contact.addresse_1)
+				.col-md-4
+					+inputTextarea('addresse_2', contact.addresse_2)
+
+			.row
+				.col-md-4
+					+inputText('text','zip', contact.zip)
+
+				.col-md-4
+					+inputText('text','city', contact.city)
+
+				.col-md-4
+					+inputText('text','country', contact.country)
+
+			.row
+				.col-md-6
+					-var metiersList = [];
+					each metier in metiers
+						-metiersList.push({_id:metier._id, title:metier.title})
+					+select('metier', metiersList, contact.metiers[0])
+					//pre= contact.metiers[0]._id
+
+				.col-md-6
+					+select('metier', metiersList, contact.metiers[1])
+			.row
+				.col-md-4
+					//+inputText('date','date_created', contact.createdAt)
+				.col-md-4
+					//+inputRadio('text','client', contact.client)
+			hr
+			.row
+				.col-md-4
+					div.form-group
+						input(type="submit", class="btn btn-lg btn-primary btn-block", value="Submit")
+
+		
+		
+			

@@ -1,0 +1,73 @@
+extends ../layout
+
+	
+prepend content
+
+	section.submit
+		//pre #{user}
+		h3= title 
+		
+		form(name="submit", action="/admin/contacts/new/", method="POST")
+			//include ../inc/mixins
+
+			.row
+				.col-md-4
+					+inputText('text','society','')
+
+				.col-md-4
+					+inputText('text','firstname','')
+
+				.col-md-4
+					+inputText('text','lastname','')
+
+			.row
+				.col-md-4
+					+inputText('email','email','')
+
+				.col-md-4
+					+inputText('number','fix','')
+
+				.col-md-4
+					+inputText('number','mobile','')
+				
+			.row
+				.col-md-4
+					+inputText('text','fonction','')
+				.col-md-4
+					+inputTextarea('addresse_1','')
+				.col-md-4
+					+inputTextarea('addresse_2','')
+
+			.row
+				.col-md-4
+					+inputText('text','zip','')
+
+				.col-md-4
+					+inputText('text','city','')
+
+				.col-md-4
+					+inputText('text','country','')
+
+			.row
+				.col-md-4
+					-var metiersList = [];
+					each metier in metiers
+						-metiersList.push({_id:metier._id, title:metier.title})
+					+select('metier', metiersList, '')
+					
+				.col-md-4
+					+inputText('date','date_created','')
+
+				.col-md-4
+					+inputRadio('text','client','')
+				
+
+				
+			.row
+				.col-md-4
+					div.form-group
+						input(type="submit", class="btn btn-lg btn-primary btn-block", value="Submit")
+
+		
+		
+			
