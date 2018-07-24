@@ -8,7 +8,7 @@ const config = {
     app: {
       name: 'metrobase'
     },
-    port: process.env.PORT || 3000,
+    port: process.env.PORT || 3007,
     db: 'mongodb://localhost/metrobase-development'
   },
 
@@ -17,7 +17,7 @@ const config = {
     app: {
       name: 'metrobase'
     },
-    port: process.env.PORT || 3000,
+    port: process.env.PORT || 3007,
     db: 'mongodb://localhost/metrobase-test'
   },
 
@@ -26,7 +26,7 @@ const config = {
     app: {
       name: 'metrobase'
     },
-    port: process.env.PORT || 3000,
+    port: process.env.PORT || 3007,
     db: 'mongodb://localhost/metrobase-production'
   }
 };
