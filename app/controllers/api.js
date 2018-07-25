@@ -190,13 +190,38 @@ router.post('/comment/:id', function (req, res, next) {
 
         var query = {_id: req.params.id}
         var update = { $addToSet: {comments: comment } }
-        console.log(update)
+        //console.log(update)
         Contacts.findOneAndUpdate(query, update, {
             upsert: true, new: true
         }, function(err, contact, raw) {
             return res.json({
                 success: true,
                 comment: comment
+            })
+        });
+    });
+});
+
+router.post('/comment/:pid/:cid/delete', function (req, res, next) {
+    const {data} = req.body;
+
+    var query = {_id: req.params.pid}
+    var update = { $pull: {comments: req.params.cid } }
+
+    Contacts.findOneAndUpdate(query, update, {
+        upsert: true, new: true
+    }, function(err, contact, raw) {
+
+        Posts.remove({
+            _id: req.params.cid
+        }, function(err, post) {
+            if (err) {
+              return res.send(err);
+            }
+
+            return res.json({
+                success: true,
+                contact: contact
             })
         });
     });
