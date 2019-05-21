@@ -37,7 +37,7 @@ router.get('/setup', function (req, res, next) {
             return res.send(err);
         }
 
-        res.redirect('/');
+        res.redirect('/admin');
     });
     
 });
