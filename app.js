@@ -5,7 +5,7 @@ const config = require('./config/config');
 const glob = require('glob');
 const mongoose = require('mongoose');
 
-mongoose.connect(config.db);
+mongoose.connect(process.env.MONGODB_URI || config.db);
 const db = mongoose.connection;
 db.on('error', () => {
   throw new Error('unable to connect to database at ' + config.db);
