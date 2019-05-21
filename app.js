@@ -7,6 +7,10 @@ const mongoose = require('mongoose');
 
 mongoose.connect(process.env.MONGODB_URI || config.db);
 const db = mongoose.connection;
+db.once('open', function ()
+{
+  console.log('-----------------------mongoose open test');
+});
 db.on('error', () => {
   throw new Error('unable to connect to database at ' + config.db);
 });
