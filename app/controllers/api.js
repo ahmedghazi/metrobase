@@ -27,7 +27,7 @@ router.get('/', function(req, res, next) {
 router.get('/setup', function (req, res, next) {
     var body = {
         email:"admin",
-        password:"passssap",
+        password:"pass",
         type:"admin"
     }
 
