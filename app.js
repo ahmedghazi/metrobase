@@ -4,6 +4,7 @@ const express = require('express');
 const config = require('./config/config');
 const glob = require('glob');
 const mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
 
 mongoose.connect(process.env.MONGODB_URI || config.db);
 const db = mongoose.connection;
