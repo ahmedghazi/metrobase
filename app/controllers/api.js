@@ -31,14 +31,26 @@ router.get('/setup', function (req, res, next) {
         type:"admin"
     }
 
-    var user = new Users(body);
-    user.save(function(err) {
+    var query = {type: "admin"}
+    var update = body
+
+    Users.findOneAndUpdate(query, update, {
+        upsert: true, new: true
+    }, function(err, contact, raw) {
         if (err) {
             return res.send(err);
         }
-
         res.redirect('/admin');
-    });
+    })
+
+    // var user = new Users(body);
+    // user.save(function(err) {
+    //     if (err) {
+    //         return res.send(err);
+    //     }
+
+    //     res.redirect('/admin');
+    // });
     
 });
 
@@ -145,6 +157,20 @@ router.post('/update/:id', function (req, res, next) {
                 contact: contact
             })
         });
+    });
+});
+
+router.get('/u-delete/:id', function (req, res, next) {
+    Users.remove({
+        _id: req.params.id
+    }, function(err, post) {
+        if (err) {
+          return res.send(err);
+        }
+
+        return res.json({
+            success: true
+        })
     });
 });
 

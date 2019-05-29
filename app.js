@@ -6,7 +6,7 @@ const glob = require('glob');
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
-mongoose.connect(process.env.MONGODB_URI || config.db);
+mongoose.connect(process.env.MONGODB_URI || config.db, { useMongoClient: true });
 const db = mongoose.connection;
 db.once('open', function ()
 {
