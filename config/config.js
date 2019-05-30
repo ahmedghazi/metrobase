@@ -27,7 +27,7 @@ const config = {
       name: 'metrobase'
     },
     port: process.env.PORT || 3007,
-    db: 'mongodb://localhost/metrobase-production'
+    db: 'mongodb+srv://metrobase:V5WZfJXOEvI2mOTi@cluster0-28lin.gcp.mongodb.net/test?retryWrites=true'
   }
 };
 
