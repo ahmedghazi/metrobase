@@ -4,11 +4,16 @@ const express = require('express');
 const config = require('./config/config');
 const glob = require('glob');
 const mongoose = require('mongoose');
-mongoose.Promise = global.Promise;
+//mongoose.Promise = global.Promise;
 
-mongoose.connect(process.env.MONGODB_URI || config.db);
-//mongoose.connect("mongodb+srv://metrobase:V5WZfJXOEvI2mOTi@cluster0-28lin.gcp.mongodb.net/test?retryWrites=true", {  });
-
+//mongoose.connect(process.env.MONGODB_URI || config.db);
+mongoose.connect("mongodb+srv://test:a21kRz7LzmmmN7pM@cluster0-28lin.gcp.mongodb.net/test?retryWrites=true&w=majority", {
+  reconnectTries: 100,
+  reconnectInterval: 500,
+  autoReconnect: true,
+  useNewUrlParser: true,
+  dbName: 'metrobase'
+});
 const db = mongoose.connection;
 db.once('open', function ()
 {
