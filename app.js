@@ -6,13 +6,16 @@ const glob = require('glob');
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
-mongoose.connect(process.env.MONGODB_URI || config.db, { useMongoClient: true });
+mongoose.connect(process.env.MONGODB_URI || config.db);
+//mongoose.connect("mongodb+srv://metrobase:V5WZfJXOEvI2mOTi@cluster0-28lin.gcp.mongodb.net/test?retryWrites=true", {  });
+
 const db = mongoose.connection;
 db.once('open', function ()
 {
   console.log('-----------------------mongoose open test');
 });
 db.on('error', () => {
+  console.log('-----------------------mongoose error ');
   throw new Error('unable to connect to database at ' + config.db);
 });
 

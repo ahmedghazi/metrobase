@@ -51,15 +51,18 @@ prepend content
 					+inputText('text','country', contact.country)
 
 			.row
-				.col-md-6
+				.col-md-4
 					-var metiersList = [];
 					each metier in metiers
 						-metiersList.push({_id:metier._id, title:metier.title})
 					+select('metier', metiersList, contact.metiers[0])
 					//pre= contact.metiers[0]._id
 
-				.col-md-6
-					+select('metier', metiersList, contact.metiers[1])
+				.col-md-4
+					+inputRadio('client', contact.client)
+
+				.col-md-4
+					+inputRadio('voeux', contact.voeux)
 			.row
 				.col-md-4
 					//+inputText('date','date_created', contact.createdAt)

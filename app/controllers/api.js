@@ -141,7 +141,7 @@ router.post('/update/:id', function (req, res, next) {
         if (err) {
             return res.send(err);
         }
-
+console.log(req.body.data)
         for (prop in req.body.data) {
             contact[prop] = req.body.data[prop];
         }

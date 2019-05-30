@@ -1,16 +1,18 @@
 mixin inputText(type, name, value)
 	div.form-group
+		label(for=name) #{name}
 		input(name=name, placeholder=name, type=type, class='form-control' value=value) 
 
 mixin inputTextarea(name, value)
 	div.form-group
+		label(for=name) #{name}
 		textarea(placeholder=name, name=name, class='form-control') 
 			if value
 				=value
 			else
 				=name
 				
-mixin inputRadio(type, name, value)
+mixin inputRadio(name, value)
 	div.form-group
 		div(class='radio-label')= name
 		div(class='radio-inline')
@@ -24,6 +26,7 @@ mixin inputRadio(type, name, value)
 
 mixin select(name, options, value)
 	div.form-group
+		label(for=name) #{name}
 		select(name=name, class='form-control')
 			option(value=""   )= "Métier"
 			each option in options

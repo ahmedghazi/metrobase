@@ -21,9 +21,10 @@ const ContactsSchema = new Schema({
       type: Date, default: Date.now
   },
   client: Boolean,
-
+  voeux: Boolean,
   metiers: [{type: Schema.Types.ObjectId, ref: 'Metiers'}],
   comments: [{type: Schema.Types.ObjectId, ref: 'Posts'}]
+  
 },{
     timestamps: true
 });
