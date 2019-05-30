@@ -9,7 +9,7 @@ const config = {
       name: 'metrobase'
     },
     port: process.env.PORT || 3007,
-    db: 'mongodb://localhost/metrobase-development'
+    db: 'mongodb+srv://test:a21kRz7LzmmmN7pM@cluster0-28lin.gcp.mongodb.net/test?retryWrites=true&w=majority'
   },
 
   test: {
@@ -27,7 +27,7 @@ const config = {
       name: 'metrobase'
     },
     port: process.env.PORT || 3007,
-    db: 'mongodb+srv://metrobase:V5WZfJXOEvI2mOTi@cluster0-28lin.gcp.mongodb.net/test?retryWrites=true'
+    db: 'mongodb+srv://test:a21kRz7LzmmmN7pM@cluster0-28lin.gcp.mongodb.net/test?retryWrites=true&w=majority'
   }
 };
 
