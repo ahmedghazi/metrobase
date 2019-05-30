@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 //mongoose.Promise = global.Promise;
 
 //mongoose.connect(process.env.MONGODB_URI || config.db);
-mongoose.connect("mongodb+srv://test:a21kRz7LzmmmN7pM@cluster0-28lin.gcp.mongodb.net/test?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://test:PmAD91J5CQVM2qi1@cluster0-28lin.gcp.mongodb.net/test?retryWrites=true&w=majority", {
   reconnectTries: 100,
   reconnectInterval: 500,
   autoReconnect: true,

@@ -65,6 +65,7 @@ router.get('/import', (req, res, next) => {
                 //console.log(line[0])
                 var infos = {
                     society: line[0],
+                    name: line[4]+" "+line[3],
                     lastname: line[3],
                     firstname: line[4],
                     email: line[5],
